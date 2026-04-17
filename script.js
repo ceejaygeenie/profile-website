@@ -30,10 +30,38 @@ backToTopBtn.addEventListener('click', () => {
 const hamburger = document.querySelector('.hamburger');
 const sidebar = document.querySelector('.sidebar');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  sidebar.classList.toggle('active');
-});
+if (hamburger && sidebar) {
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    sidebar.classList.toggle('active');
+  });
+}
+
+// ===== Theme Toggle =====
+const themeToggle = document.querySelector('.theme-toggle');
+const themeIcon = document.querySelector('.theme-icon');
+
+const setTheme = (theme) => {
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+  if (themeIcon) {
+    themeIcon.textContent = theme === 'dark' ? '🌙' : '☀️';
+  }
+};
+
+const toggleTheme = () => {
+  const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  setTheme(newTheme);
+};
+
+if (themeToggle) {
+  themeToggle.addEventListener('click', toggleTheme);
+}
+
+// Load saved theme
+const savedTheme = localStorage.getItem('theme') || 'dark';
+setTheme(savedTheme);
 
 // ===== Active Navigation Link =====
 const navLinks = document.querySelectorAll('a[href^="#"]');
@@ -61,8 +89,8 @@ const updateActiveNav = () => {
 // Close sidebar when clicking a nav link
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    sidebar.classList.remove('active');
+    if (hamburger) hamburger.classList.remove('active');
+    if (sidebar) sidebar.classList.remove('active');
   });
 });
 
