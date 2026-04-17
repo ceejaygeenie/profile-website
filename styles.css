@@ -1082,6 +1082,12 @@ html {
     font-size: 0.9rem;
   }
 
+  /* Responsive hero section */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
   @keyframes scroll {
     0% {
       transform: translateX(0);
@@ -1107,6 +1113,14 @@ html {
   .testimonial-card,
   .future-card {
     padding: 1.5rem;
+  }
+
+  .hero-section,
+  .features-section,
+  .future-section,
+  .testimonial-section,
+  .site-footer {
+    padding: 3rem 0;
   }
 
   .footer-grid {
