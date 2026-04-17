@@ -26,8 +26,17 @@ backToTopBtn.addEventListener('click', () => {
   });
 });
 
+// ===== Hamburger Menu =====
+const hamburger = document.querySelector('.hamburger');
+const sidebar = document.querySelector('.sidebar');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  sidebar.classList.toggle('active');
+});
+
 // ===== Active Navigation Link =====
-const navLinks = document.querySelectorAll('.main-nav a');
+const navLinks = document.querySelectorAll('a[href^="#"]');
 const sections = document.querySelectorAll('section, footer');
 
 const updateActiveNav = () => {
@@ -48,6 +57,14 @@ const updateActiveNav = () => {
     }
   });
 };
+
+// Close sidebar when clicking a nav link
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    sidebar.classList.remove('active');
+  });
+});
 
 window.addEventListener('scroll', updateActiveNav);
 
