@@ -20,24 +20,24 @@
 }
 
 [data-theme="light"] {
-  --bg: #fafbfc;
+  --bg: #fefefe;
   --surface: #ffffff;
-  --surface-alt: #f8f9fa;
+  --surface-alt: #fff8f5;
   --text: #1a1a1a;
-  --muted: #6c757d;
-  --accent: #ff6b35; /* Keep accent colors the same */
+  --muted: #8b5a3c;
+  --accent: #ff6b35;
   --accent-soft: #ff8c42;
   --accent-warm: #ff4500;
-  --border: rgba(0, 0, 0, 0.08);
-  --glass-bg: rgba(255, 255, 255, 0.9);
-  --glass-border: rgba(0, 0, 0, 0.06);
-  --shadow-light: rgba(0, 0, 0, 0.08);
-  --shadow-medium: rgba(0, 0, 0, 0.12);
-  --shadow-heavy: rgba(0, 0, 0, 0.16);
-  --highlight: rgba(0, 0, 0, 0.02);
-  --gradient-start: rgba(255, 107, 53, 0.04);
-  --gradient-end: rgba(255, 140, 66, 0.03);
-  --overlay: rgba(255, 255, 255, 0.1);
+  --border: rgba(255, 107, 53, 0.15);
+  --glass-bg: rgba(255, 255, 255, 0.95);
+  --glass-border: rgba(255, 107, 53, 0.1);
+  --shadow-light: rgba(255, 107, 53, 0.08);
+  --shadow-medium: rgba(255, 107, 53, 0.12);
+  --shadow-heavy: rgba(255, 107, 53, 0.16);
+  --highlight: rgba(255, 107, 53, 0.03);
+  --gradient-start: rgba(255, 107, 53, 0.06);
+  --gradient-end: rgba(255, 140, 66, 0.04);
+  --overlay: rgba(255, 107, 53, 0.08);
 }
 
 * {
@@ -600,13 +600,13 @@ img {
 
 .stat-item {
   padding: 2rem;
-  background: rgba(30, 30, 30, 0.3);
+  background: rgba(255, 107, 53, 0.05);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 107, 53, 0.2);
+  border: 1px solid rgba(255, 107, 53, 0.1);
   border-radius: 16px;
   box-shadow:
-    0 4px 16px rgba(255, 107, 53, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    0 4px 16px rgba(255, 107, 53, 0.08),
+    inset 0 1px 0 rgba(255, 107, 53, 0.02);
 }
 
 .stat-number {
@@ -1059,13 +1059,13 @@ html {
 .stat {
   text-align: center;
   padding: 2rem;
-  background: rgba(30, 30, 30, 0.3);
+  background: rgba(255, 107, 53, 0.05);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 107, 53, 0.2);
+  border: 1px solid rgba(255, 107, 53, 0.1);
   border-radius: 16px;
   box-shadow:
-    0 4px 16px rgba(255, 107, 53, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    0 4px 16px rgba(255, 107, 53, 0.08),
+    inset 0 1px 0 rgba(255, 107, 53, 0.02);
 }
 
 .stat h3 {
@@ -1109,15 +1109,15 @@ html {
 }
 
 .tech-tag {
-  background: rgba(30, 30, 30, 0.3);
+  background: rgba(255, 107, 53, 0.08);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 107, 53, 0.2);
+  border: 1px solid rgba(255, 107, 53, 0.15);
   color: var(--accent);
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 500;
-  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.1);
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.06);
 }
 
 .features-grid {
@@ -1129,13 +1129,13 @@ html {
 
 .feature-item {
   padding: 2rem;
-  background: rgba(30, 30, 30, 0.3);
+  background: rgba(255, 107, 53, 0.05);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 107, 53, 0.2);
+  border: 1px solid rgba(255, 107, 53, 0.1);
   border-radius: 16px;
   box-shadow:
-    0 4px 16px rgba(255, 107, 53, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    0 4px 16px rgba(255, 107, 53, 0.08),
+    inset 0 1px 0 rgba(255, 107, 53, 0.02);
 }
 
 .feature-item h4 {
@@ -1160,12 +1160,12 @@ html {
 .result-item {
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 140, 66, 0.08));
-  border: 1px solid rgba(255, 107, 53, 0.2);
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.08), rgba(255, 140, 66, 0.06));
+  border: 1px solid rgba(255, 107, 53, 0.1);
   border-radius: 16px;
   box-shadow:
-    0 4px 16px rgba(255, 107, 53, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    0 4px 16px rgba(255, 107, 53, 0.08),
+    inset 0 1px 0 rgba(255, 107, 53, 0.02);
 }
 
 .result-item h3 {
@@ -1198,12 +1198,12 @@ html {
 
 .gallery-item {
   height: 200px;
-  background: linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(255, 140, 66, 0.1), rgba(255, 69, 0, 0.08));
-  border: 1px solid rgba(255, 107, 53, 0.2);
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.12), rgba(255, 140, 66, 0.08), rgba(255, 69, 0, 0.06));
+  border: 1px solid rgba(255, 107, 53, 0.1);
   border-radius: 16px;
   box-shadow:
-    0 4px 16px rgba(255, 107, 53, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    0 4px 16px rgba(255, 107, 53, 0.08),
+    inset 0 1px 0 rgba(255, 107, 53, 0.02);
 }
 
 .ecommerce-gallery-1 {
