@@ -47,6 +47,10 @@ const setTheme = (theme) => {
   if (themeIcon) {
     themeIcon.textContent = theme === 'dark' ? '🌙' : '☀️';
   }
+  // Enable transitions after theme is set
+  setTimeout(() => {
+    document.documentElement.classList.add('theme-transition-enabled');
+  }, 50);
 };
 
 const toggleTheme = () => {
